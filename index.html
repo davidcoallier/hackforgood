@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>HackForGood Night</title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+ </head>
+ <body>
+  <h1>HackForGood</h1>
+  <h2>Evenings of Hacking to make the world a better place</h2>
+
+  <section>
+    <h3>What:</h3>
+    <p>
+        Imagine if for once we decided to write software and web applications 
+        that do not revolve only around technology, social networking or sharing pictures but
+        rather focus on improving the life of those around us. 
+    </p>
+    <p>
+        The idea behind the <strong>HackForGood</strong> evenings is to gather the best developers in certain cities, sit
+        together, write applications that could be used for the greater good and that can help other human beings or
+        the environment depending on the theme of the night.
+    </p>
+    
+    <p>
+        The rules are very simple. Have a good time, have a few drinks, eat some food, write some code, enjoy.
+    </p>
+  </section>
+
+  <section>
+    <h3>When:</h3>
+    <p>
+        Monday 9th of May, 2011
+    </p>
+    <p>
+
+    </p>
+  </section>
+  
+  <section>
+    <h3>Where:</h3>
+    <p>
+      At the <a href="http://www.orchestra.io">Orchestra.io</a> San Francisco offices in the <a href="http://www.storekbuilding.com/#location">Storek building</a> at 149 9th St.
+    </p>
+
+    <div id="map"></div>
+  </section>
+
+  <footer id="logos">
+    <h3>Who:</h3>
+    <p>
+     <a href="http://www.orchestra.io"><img src="./images/orchestra.png" /></a>
+     <a href="http://www.simplegeo.com"><img src="./images/simplegeo.png" /></a>
+     <a href="http://www.storekbuilding.com"><img src="./images/storek.jpg" /></a>
+     <a href="http://www.github.com"><img src="./images/github.png" /></a>
+    </p>
+  </footer>
+
+   <script type="text/javascript">
+   function initialize() {
+     var myLatlng = new google.maps.LatLng(37.775606, -122.413722);
+     var myOptions = {
+       zoom: 15,
+       center: myLatlng,
+       disableDefaultUI: true,
+       navigationControl: true,
+       mapTypeId: google.maps.MapTypeId.ROADMAP
+     }
+
+     var map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+     var marker = new google.maps.Marker({position: myLatlng, map: map});
+    }
+
+    function loadScript() {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "http://maps.google.com/maps/api/js?sensor=false&callback=initialize";
+      document.body.appendChild(script);
+    }
+
+    window.onload = loadScript;
+   </script>
+
+ </body>
+</html>
