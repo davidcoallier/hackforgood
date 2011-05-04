@@ -127,8 +127,16 @@ p {
 #logos p a {
     position: relative;
     float: left;
-    width: 49%;
+    width: 49%
 }
+
+#logos p a.alone {
+    position: relative;
+    float:left !important;
+    width: 60%;
+}
+
+#tropo { padding-left: 30px; }
 ul {
     padding-left: 260px;
     margin-bottom: 12px;
