@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'Bevan';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Bevan'), url('http://themes.googleusercontent.com/font?kit=EJh9uh2wkQP9ayreC3xPZaCWcynf_cDxXwCLxiixG1c') format('woff');
-}
-
 *  {
     margin:0px;
     padding:0px;
