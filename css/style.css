@@ -141,3 +141,7 @@ ul {
     padding-left: 260px;
     margin-bottom: 12px;
 }
+
+ul.schedule li strong {
+    padding-right: 10px;
+}
