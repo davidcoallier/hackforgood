@@ -3,6 +3,7 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>HackForGood Night</title>
+  <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
   <link href="./css/style.css?3" type="text/css" rel="stylesheet">
  </head>
  <body>
